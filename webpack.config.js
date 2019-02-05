@@ -3,6 +3,10 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   entry: './src/index.tsx',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
   },
@@ -13,10 +17,6 @@ module.exports = {
         test: /\.css?$/, use: ['style-loader', { loader: 'css-loader', options: { modules: true, importLoaders: 1, localIdentName: '[sha1:hash:hex:4]' } }]
       }
     ]
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
   },
   devServer: {
     historyApiFallback: true
