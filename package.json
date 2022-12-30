@@ -35,10 +35,10 @@
     "jest": "^24.8.0",
     "jest-css-modules": "^2.0.0",
     "ts-jest": "^24.0.2",
-    "ts-loader": "^4.3.0",
+    "ts-loader": "^9.4.2",
     "typescript": "^2.8.3",
-    "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.6.0"
   },
   "jest": {
